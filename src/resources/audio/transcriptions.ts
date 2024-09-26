@@ -23,6 +23,7 @@ export interface Transcription {
    * The transcribed text.
    */
   text: string;
+  segments: Array<{ start: number; end: number; text: string }>;
 }
 
 export interface TranscriptionCreateParams {
